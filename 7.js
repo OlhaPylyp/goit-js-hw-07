@@ -5,7 +5,6 @@
 // <span id="text">Абракадабра!</span>
 
 "use strict";
-
 const inputRef = document.querySelector('#font-size-control');
 const spanById = document.querySelector('#text');
 inputRef.addEventListener('input', changeSize)
