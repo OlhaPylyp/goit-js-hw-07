@@ -20,3 +20,9 @@ const containerRef = document.querySelector("#controls")
 const render = document.querySelector('button[data-action="render"]');
 const destroy = document.querySelector('button[data-action="destroy"]');
 render.addEventListener('click',)
+destroy.addEventListener('click',)
+function createBoxes(amount) { 
+    for (let i = 0; i <= amount.length; i++) { 
+        containerRef
+    }
+}
