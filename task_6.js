@@ -20,7 +20,7 @@
 //   border-color: #f44336;
 // }
 
-"use strict";
+
 const inputRef = document.querySelector('#validation-input');
 
 inputRef.addEventListener('blur', onBlur)

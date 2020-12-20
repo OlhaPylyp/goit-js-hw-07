@@ -3,7 +3,7 @@
 
 // <input type="text" placeholder="Ваше имя?" id="name-input" />
 // <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
-"use strict";
+
 const inputRef = document.querySelector('#name-input');
 const spanById = document.querySelector('#name-output');
 inputRef.addEventListener('input', checkInputText)

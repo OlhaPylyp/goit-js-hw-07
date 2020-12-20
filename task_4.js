@@ -10,7 +10,6 @@
 // </div>
 
 
-"use strict";
 let counterValue = 0;
 console.log(1);
 (() => {

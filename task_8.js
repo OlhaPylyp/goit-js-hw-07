@@ -14,18 +14,38 @@
 //   <button type="button" data-action="render">Создать</button>
 //   <button type="button" data-action="destroy">Очистить</button>
 // </div>
-
 // <div id="boxes"></div>
+
 const containerRef = document.querySelector("#controls")
 const render = document.querySelector('button[data-action="render"]');
 const destroy = document.querySelector('button[data-action="destroy"]');
 const boxesById = document.querySelector("#boxes");
-render.addEventListener('click',);
-destroy.addEventListener('click',);
+const inputRef = document.querySelector(".amount");
+
+render.addEventListener('click',createBoxes);
+// destroy.addEventListener('click',);
+let initialBoxesSize = 30;
 function createBoxes(amount) { 
-    let initialBoxesSize = "30px";
-    spanById.style.fontSize = initialBoxesSize  +'10px';
-    for (let i = 0; i <= amount.length; i++) { 
-       document.createElement("div")
-    }
-}
+    const result = [];
+    for(let i = 0; i < amount; i += 1) {
+        const box = document.createElement('div');
+        const size = initialBoxesSize + 10 * i;
+        result.push(box)
+        console.log(box);
+    } 
+    boxesById.append(...result);
+    console.log(boxesById);
+};
+
+
+    
+    // let result = [];
+    // for (let i = 0; i < amount; i++) { 
+    //     const container = document.createElement("div")
+    //     result.push(container)
+    //     console.log(result);
+    //     const size = initialBoxesSize + 10*i;
+//     }
+//     boxesById.append(...result)
+// }
+
