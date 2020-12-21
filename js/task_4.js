@@ -9,12 +9,11 @@
 //   <button type="button" data-action="increment">+1</button>
 // </div>
 
-
 let counterValue = 0;
 console.log(1);
-(() => {
+
   console.log(2);
-  const onloadFunction = () => {
+ 
  console.log(3);
   const decrementBtn = document.querySelector('button[data-action="decrement"]');
   const incrementBtn = document.querySelector('button[data-action="increment"]');
@@ -31,6 +30,5 @@ console.log(1);
     counterValue -= 1;
     spanById.textContent = counterValue;};
  
-  }
-   window.onload = onloadFunction;
-})();
+
+  

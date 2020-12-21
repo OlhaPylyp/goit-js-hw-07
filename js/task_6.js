@@ -29,7 +29,7 @@ function onBlur(event) {
   // console.log("datalength=", inputRef.dataset.length)
   // console.log("inputlength=", inputRef)
   // console.log("event=", event.target.value.length)
-  if (event.target.value.length == inputRef.dataset.length) {   
+  if (event.target.value.length === Number(inputRef.dataset.length)) {   
     inputRef.classList.add("valid");
        inputRef.classList.remove("invalid")
   } else {
